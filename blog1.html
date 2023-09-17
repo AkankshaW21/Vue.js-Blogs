@@ -103,8 +103,6 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: center;
-            /* Add margin to create space between containers */
-            /* Add margin to create space between containers */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -142,51 +140,10 @@
             background-color: #921616; /* Change the background color on hover */
         }
         
-        .horizontel-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-left: 130px;
-            margin-right: 80px;
-            height: 300px;
-            width: 1200px; /* Adjust the width to cover the page minus margins */
-            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        /* Style for the second set of containers */
+        .second-set {
+            margin-top: 20px; /* Add margin to separate the two sets of containers */
         }
-        
-        /* Style for individual containers */
-        .container-item {
-            flex: 0 0 calc(33.3333% - 40px); /* Set the width for each container with margin */
-            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            /* Add margin to create space between containers */
-            /* Add margin to create space between containers */
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* Style for the image in the container */
-        .containar-image {
-            height: 68%; /* 75% of the container's height for the image */
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
-        }
-        
-        .containar-heading a {
-            text-decoration: none; /* Remove the default underline */
-            color: #333; /* Set the text color to your preference */
-            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
-        }
-
-
-
-
-
-
-
-        
 
         /* Add your footer styles here */
         .footer {
@@ -249,39 +206,22 @@
             font-size: 24px; /* Adjust the font size as needed */
             margin-right: 10px; /* Add margin between the icons */
             text-decoration: none; /* Remove underlines from the links */
-            color: #3b5998; /* Facebook blue color */
         }
 
         .social-icons-container .social-icon-link.facebook:hover {
             color: #4267B2; /* Facebook hover color */
         }
 
-        .social-icons-container .social-icon-link.twitter {
-            color: #1DA1F2; /* Twitter blue color */
-        }
-
         .social-icons-container .social-icon-link.twitter:hover {
             color: #2795D9; /* Twitter hover color */
-        }
-
-        .social-icons-container .social-icon-link.instagram {
-            color: #E4405F; /* Instagram pink/red color */
         }
 
         .social-icons-container .social-icon-link.instagram:hover {
             color: #C13584; /* Instagram hover color */
         }
 
-        .social-icons-container .social-icon-link.linkedin {
-            color: #0A66C2; /* LinkedIn blue color */
-        }
-
         .social-icons-container .social-icon-link.linkedin:hover {
             color: #0073B2; /* LinkedIn hover color */
-        }
-
-        .social-icons-container .social-icon-link.youtube {
-            color: #FF0000; /* YouTube red color */
         }
 
         .social-icons-container .social-icon-link.youtube:hover {
@@ -314,78 +254,61 @@
     <br>
     <h2>Blogs on Vue.js</h2>
     <br>
-<!-- First set of containers -->
-
-<!-- First set of containers -->
-<div class="horizontal-container">
-    <!-- Container 1 -->
-    <div class="container-item">
-        <img src="https://www.careerguide.com/career/wp-content/uploads/2021/06/photo-1610563166150-b34df4f3bcd6.jpeg" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="Exploring the Power of Vue.html">Exploring the power of Vue</a></h3>
-            <a href="Exploring the Power of Vue.html" class="read-article-button">Blog 1</a>
+    <!-- First set of containers -->
+    <div class="horizontal-container">
+        <!-- Container 1 -->
+        <div class="container-item">
+            <img src="https://www.careerguide.com/career/wp-content/uploads/2021/06/photo-1610563166150-b34df4f3bcd6.jpeg" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="Exploring the Power of Vue.html">Exploring the power of Vue</a></h3>
+                <a href="Exploring the Power of Vue.html" class="read-article-button">Blog 1</a>
+            </div>
+        </div>
+        <!-- Container 2 -->
+        <div class="container-item">
+            <img src="https://vueschool.io/storage/media/acb06e901542e9ba62e98f515ce8d266/vuejs-single-file-components.png" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="Vue components.html">Vue Components</a></h3>
+                <a href="Vue components.html" class="read-article-button">Blog 2</a>
+            </div>
+        </div>
+        <!-- Container 3 -->
+        <div class="container-item">
+            <img src="https://images.php.fyi/img/articles/vue-3-ssr/summary.webp" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="SSR Blog.html">SSR</a></h3>
+                <a href="SSR Blog.html" class="read-article-button">Blog 3</a>
+            </div>
         </div>
     </div>
-    <!-- Container 2 -->
-    <div class="container-item">
-        <img src="https://vueschool.io/storage/media/acb06e901542e9ba62e98f515ce8d266/vuejs-single-file-components.png" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="Vue components.html">Vue Components</a></h3>
-            <a href="Vue components.html" class="read-article-button">Blog 2</a>
+
+    <!-- Second set of containers -->
+    <div class="horizontal-container second-set">
+        <!-- Container 4 -->
+        <div class="container-item">
+            <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="Exploring the Power of Vue.html">Animations And Transitions</a></h3>
+                <a href="Exploring the Power of Vue.html" class="read-article-button">Blog 1</a>
+            </div>
+        </div>
+        <!-- Container 5 -->
+        <div class="container-item">
+            <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="Vue components.html">Vue Components</a></h3>
+                <a href="Vue components.html" class="read-article-button">Blog 2</a>
+            </div>
+        </div>
+        <!-- Container 6 -->
+        <div class="container-item">
+            <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
+            <div class="container-text">
+                <h3 class="container-heading"><a href="vue ecosytem.html">Vue Ecosystem</a></h3>
+                <a href="vue ecosyatem.html" class="read-article-button">Blog 5</a>
+            </div>
         </div>
     </div>
-    <!-- Container 3 -->
-    <div class="container-item">
-        <img src="https://images.php.fyi/img/articles/vue-3-ssr/summary.webp" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="SSR Blog.html">SSR</a></h3>
-            <a href="SSR Blog.html" class="read-article-button">Blog 3</a>
-        </div>
-    </div>
-    
-</div>
-
-<!-- Second set of containers -->
-<div class="horizontel-container second-set">
-    <!-- Container 4 -->
-    <div class="container-item">
-        <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="Exploring the Power of Vue.html">Animations And Transitions</a></h3>
-            <a href="Exploring the Power of Vue.html" class="read-article-button">Blog 1</a>
-        </div>
-    </div>
-    <!-- Container 4 -->
-    <div class="container-item">
-        <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="Vue components.html">Vue Components</a></h3>
-            <a href="Vue components.html" class="read-article-button">Blog 2</a>
-        </div>
-    </div>
-    <!-- Container 6 -->
-    <div class="container-item">
-        <img src="https://miro.medium.com/v2/resize:fill:224:224/1*e0QaKNqJ3A465rLrnGGMgA.jpeg" alt="Vue Ecosystem" class="container-image">
-        <div class="container-text">
-            <h3 class="container-heading"><a href="vue ecosytem.html">Vue Ecosystem</a></h3>
-            <a href="vue ecosyatem.html" class="read-article-button">Blog 5</a>
-        </div>
-    </div>
-    
-</div>
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
 
     <br>
     <br>
@@ -393,8 +316,8 @@
     <br>
 
     <footer>
-        <div class="foot-panel">
-
+        <div class="foot-panel1">
+            <!-- Content for footer panel 1 -->
         </div>
         <div class="foot-panel2">
             <ul>
@@ -434,7 +357,9 @@
                 <li><a>Blockchain Integration</a></li>
             </ul>
         </div>
-
+        <div class="foot-panel3">
+            <!-- Content for footer panel 3 -->
+        </div>
     </footer>
 
     <div class="separate-container">
